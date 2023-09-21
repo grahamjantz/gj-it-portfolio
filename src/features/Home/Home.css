@@ -1,0 +1,79 @@
+.home {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+.square1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -250px;
+    top: 25vh;
+    z-index: 0;
+    transform: rotate(45deg);
+    opacity: 0.5;
+}
+
+.square2-container span {
+    width: 80px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    top: 70vh;
+    z-index: 0;
+}
+
+.square2-container span:last-of-type {
+    transform: rotateX(180deg);
+    top: calc(70vh + 250px)
+}
+
+main img {
+    width: 250px;
+    height: auto;
+}
+
+main h1 {
+    transition: 1.5s;
+}
+
+main h3 {
+    transition: 4s;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 80vh;
+        gap: 5rem;
+    }
+    main img {
+        width: 350px;
+    }
+    .square1 {
+        width: 400px;
+        height: 400px;
+        left: -200px;
+    }
+    .square2-container span {
+        height: 400px;
+        width: 150px;
+    }
+    .square2-container span:last-of-type  {
+        top: calc(70vh + 400px)
+    }
+}
