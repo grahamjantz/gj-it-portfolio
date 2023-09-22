@@ -48,7 +48,7 @@ const Home = () => {
           <img src={heroImage} alt='hero' />
           <div>
             <h1 style={h1Style}>Hi, I'm Graham Jantz</h1>
-            <h3 style={h3Style}><em>Currently seeking to launch IT career</em></h3>
+            <h3 style={h3Style}><em>Pursuing IT Opportunities</em></h3>
           </div>
       </main>
     </div>
